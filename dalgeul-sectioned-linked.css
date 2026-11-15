@@ -105,11 +105,11 @@
 #dalgeul-post .slide {
   position: relative;
   flex: 0 0 100%;
+	width: 100%;
 	min-width: 0;
 	overflow: hidden;
   border-radius: inherit;
-  aspect-ratio: 1;
-  min-height: 190px;
+  aspect-ratio: 1 / 1;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
@@ -183,8 +183,6 @@
 #dalgeul-post .banner-controls button:disabled { visibility:hidden; }
 #dalgeul-post .slide-copy a.visit { text-decoration:none; }
 #dalgeul-post .banner { margin-inline:16px !important; }
-#dalgeul-post .banner-track { container-type:inline-size; }
-#dalgeul-post .slide { width:100%; height:clamp(190px, 100cqw, 460px) !important; }
 #dalgeul-post .slide-title { text-align:left !important; font-size:20px !important; }
 #dalgeul-post .visit [data-dalgeul-icon]::before { content:"←"; }
 @media (max-width: 600px) {
@@ -256,14 +254,22 @@
 
 #dalgeul-post .highlights { margin-top: 32px; }
 #dalgeul-post .video-slot {
-  height: 200px;
+  position: relative;
+  aspect-ratio: 16 / 9;
   margin: 8px var(--gutter) 0;
   border-radius: 20px;
   overflow: hidden;
   background: #ccc;
 }
 #dalgeul-post .video-slot video,
-#dalgeul-post .video-slot iframe { display: block; width: 100%; height: 100%; border: 0; }
+#dalgeul-post .video-slot iframe {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 #dalgeul-post .video-slot { margin-inline:16px !important; }
 #dalgeul-post #highlights-title { text-align:left !important; font-size:16px !important; margin:0 16px !important; }
 #dalgeul-post .highlights .video-slot { margin-top: 16px !important; }
