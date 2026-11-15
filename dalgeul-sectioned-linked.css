@@ -364,3 +364,15 @@
 }
 #dalgeul-post .faq-height-reference { min-height: 323px; }
 @media (max-width: 600px) { #dalgeul-post .faq-height-reference { min-height: 424px; } }
+
+#primaryContent {
+	padding: 0 !important;
+}
+
+#user_contents > p:first-child {
+  display: none !important;
+}
+
+.figure-html {
+	margin-top: 0 !important;
+}
