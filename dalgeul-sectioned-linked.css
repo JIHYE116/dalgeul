@@ -258,7 +258,7 @@
 }
 #dalgeul-post .keywords > li:first-of-type { border-color: #d40304 !important; }
 
-#dalgeul-post .highlights { margin-top: 32px; }
+#dalgeul-post .highlights { margin-top: 48px; }
 #dalgeul-post .video-slot {
   position: relative;
   aspect-ratio: 16 / 9;
