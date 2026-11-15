@@ -390,8 +390,9 @@
 	display: none !important;
 }
 
-#article > p:first-child, #article > p:last-child {
-	display: none !important;
+#article > p:first-of-type,
+#article > p:last-of-type {
+  display: none !important;
 }
 
 #article {
