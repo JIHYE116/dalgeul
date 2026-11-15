@@ -479,17 +479,33 @@ body, div, li {
 
 /* 카페 HTML 배너의 달글 방문 링크와 이전·다음 링크 */
 #dalgeul-post .slide-copy a.visit { color: #171717 !important; text-decoration: none !important; }
-#dalgeul-post .slide .banner-controls { gap: 3px; }
+#dalgeul-post .slide .banner-controls { align-items: center; gap: 3px; }
 #dalgeul-post .slide .banner-controls a {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 20px;
   min-height: 28px;
   color: #fff !important;
-  font-size: 20px !important;
-  line-height: 1;
+  font-size: 0 !important;
+  line-height: 0 !important;
   text-decoration: none !important;
 }
+#dalgeul-post .slide .banner-controls a::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+#dalgeul-post .slide .banner-controls a:first-child::before {
+  transform: rotate(-135deg);
+}
 #dalgeul-post .slide .banner-controls a:active { opacity: .65; }
-#dalgeul-post .slide .banner-count { white-space: nowrap; }
+#dalgeul-post .slide .banner-count {
+  display: block;
+  line-height: 16px !important;
+  white-space: nowrap;
+}
 #dalgeul-post .slide-copy .slide-title { word-break: normal; }
