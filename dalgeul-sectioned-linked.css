@@ -462,3 +462,23 @@
     #header {
         visibility: hidden !important;
     }
+
+
+#dalgeul-post::before {
+  content: "진단: 두 부모 모두 찾지 못함";
+  display: block;
+  color: #fff;
+  background: #730067;
+}
+
+#mArticle #dalgeul-post::before {
+  content: "진단: #mArticle 있음";
+}
+
+#article #dalgeul-post::before {
+  content: "진단: #article 있음";
+}
+
+#mArticle #article #dalgeul-post::before {
+  content: "진단: #mArticle과 #article 모두 있음";
+}
