@@ -418,3 +418,51 @@
 .cafe_navi > h2 {
 	background: black !important;
 }
+
+	#mArticle > div {
+        padding: 0 !important;
+    }
+
+    #mArticle * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    #mArticle > div:nth-child(1) {
+        display: none !important;
+    }
+
+    .btn_paging {
+        display: none !important;
+    }
+
+    .cafeview_cmt {
+        display: none !important;
+    }
+
+    .figure-img {
+        display: none !important;
+    }
+
+    #btn_attach,
+    #recommend-btn {
+        display: none !important;
+    }
+    
+    .scrap_wrap{display:none !important;}
+
+    .cafeview_info {
+        display: none !important;
+    }
+
+    #btn_attach {
+        display: none !important;
+    }
+
+    body, div, li {
+        background-color: transparent !important;
+    }
+
+    #header {
+        visibility: hidden !important;
+    }
