@@ -86,8 +86,10 @@
 
 #dalgeul-post .banner-track {
   overflow-x: auto;
+  overflow-y: hidden;
   scrollbar-width: none;
-  overscroll-behavior-x: contain;
+  overscroll-behavior-x: none;
+  touch-action: pan-x pinch-zoom;
 }
 #dalgeul-post .banner-track::-webkit-scrollbar { display: none; }
 #dalgeul-post .banner {
@@ -101,6 +103,7 @@
 #dalgeul-post .slide {
   position: relative;
   flex: 0 0 100%;
+	min-width: 0;
   aspect-ratio: 1;
   min-height: 190px;
   scroll-snap-align: start;
