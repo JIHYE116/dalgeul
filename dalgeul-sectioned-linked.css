@@ -797,6 +797,10 @@ body:has(#dalgeul-notice-open:checked) {
 
 #dalgeul-notice .notice-footer .notice-close { min-width: 40px; }
 
+@media (max-width: 600px) and (pointer: coarse) {
+  #dalgeul-notice .notice-overlay { padding-bottom: 32px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   #dalgeul-notice .notice-overlay,
   #dalgeul-notice .notice-sheet { transition: none; }
