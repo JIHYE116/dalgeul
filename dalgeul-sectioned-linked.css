@@ -397,3 +397,19 @@
 #article {
 	padding: 0;
 }
+
+.view_detail {
+	display: none !important;
+}
+
+#mAside {
+	display: none !important;
+}
+
+.viewrecom_wrap {
+	display: none !important;
+}
+
+.bottom_banner {
+	display: none !important;
+}
