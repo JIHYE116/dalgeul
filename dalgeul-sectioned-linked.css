@@ -803,7 +803,7 @@ body:has(#dalgeul-notice-open:checked) {
 #dalgeul-notice .notice-footer .notice-close { min-width: 40px; }
 
 @media (max-width: 600px) and (pointer: coarse) {
-  #dalgeul-notice .notice-overlay { padding-bottom: 132px; }
+  #dalgeul-notice .notice-overlay { padding-bottom: 130px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
