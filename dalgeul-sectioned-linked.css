@@ -519,3 +519,10 @@ body, div, li {
   white-space: nowrap;
 }
 #dalgeul-post .slide-copy .slide-title { word-break: normal; }
+
+
+@media (pointer: coarse) {
+  #dalgeul-post .banner-controls > a[href^="#dalgeul-banner-"] {
+    display: none !important;
+  }
+}
