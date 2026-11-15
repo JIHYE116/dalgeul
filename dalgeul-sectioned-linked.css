@@ -650,7 +650,7 @@ body:has(#dalgeul-notice-open:checked) {
 }
 
 #dalgeul-notice .notice-sheet {
-  width: min(100%, 480px);
+  width: 100%;
   max-height: 100%;
   min-height: 0;
   overflow: auto;
@@ -666,6 +666,7 @@ body:has(#dalgeul-notice-open:checked) {
 
 #dalgeul-notice .notice-body {
   padding: 16px 16px 17px;
+  padding-inline: max(16px, calc((100% - 448px) / 2));
   background: linear-gradient(127.214deg, #bacbe4 4.715%, #719ad7 93.87%);
 }
 
@@ -688,7 +689,7 @@ body:has(#dalgeul-notice-open:checked) {
   flex: 1;
   min-width: 0;
   margin: 0;
-  color: #000;
+  color: #171717;
   font: 400 clamp(16px, 5.65vw, 22px) / 1.35 "Partial Sans KR", Pretendard, sans-serif !important;
 }
 
@@ -731,6 +732,7 @@ body:has(#dalgeul-notice-open:checked) {
   align-items: end;
   justify-content: center;
   gap: min(9vw, 36px);
+  min-height: 47.0714px;
   margin-top: 2px;
   background: transparent;
   font-size: 16px;
@@ -756,16 +758,19 @@ body:has(#dalgeul-notice-open:checked) {
 }
 
 #dalgeul-notice .notice-continue {
-  display: grid;
-  justify-items: center;
-  gap: 2px;
+  position: relative;
   color: #3e87f9;
   cursor: not-allowed;
 }
 
 #dalgeul-notice .notice-block-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 25.0714px;
   height: 25.0714px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
   background: center no-repeat url("data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiBvdmVyZmxvdz0idmlzaWJsZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyIgd2lkdGg9IjI1LjA3MTQiIGhlaWdodD0iMjUuMDcxNCIgdmlld0JveD0iMCAwIDI1LjA3MTQgMjUuMDcxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikdyb3VwIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTIzLjU3MTQgMTIuNTM1N0MyMy41NzE0IDE4LjYzMDYgMTguNjMwNiAyMy41NzE0IDEyLjUzNTcgMjMuNTcxNEM2LjQ0MDg2IDIzLjU3MTQgMS41IDE4LjYzMDYgMS41IDEyLjUzNTdDMS41IDYuNDQwODYgNi40NDA4NiAxLjUgMTIuNTM1NyAxLjVDMTguNjMwNiAxLjUgMjMuNTcxNCA2LjQ0MDg2IDIzLjU3MTQgMTIuNTM1N1oiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2U9IiNCRjFEMjAiLz4KPHBhdGggaWQ9IlZlY3Rvcl8yIiBkPSJNNC43MjU4MiAyMC4zNDU2TDIwLjM0NTYgNC43MjU4MiIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZT0iI0JGMUQyMCIvPgo8L2c+Cjwvc3ZnPgo=");
 }
 
@@ -784,6 +789,7 @@ body:has(#dalgeul-notice-open:checked) {
   justify-content: flex-end;
   align-items: center;
   padding: 0 16px env(safe-area-inset-bottom, 0px);
+  padding-inline: max(16px, calc((100% - 448px) / 2));
   background: #fff;
   color: #757575;
   font-size: 13px;
