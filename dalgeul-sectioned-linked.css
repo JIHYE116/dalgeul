@@ -45,7 +45,7 @@
   padding: 0 10px;
   color: #bfbfbf;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 #dalgeul-post .menu button:first-child { padding-left: 0; }
@@ -245,7 +245,7 @@
 #dalgeul-post .video-slot video,
 #dalgeul-post .video-slot iframe { display: block; width: 100%; height: 100%; border: 0; }
 #dalgeul-post .video-slot { margin-inline:16px !important; }
-#dalgeul-post #highlights-title { text-align:left !important; font-size:14px !important; margin:0 16px !important; }
+#dalgeul-post #highlights-title { text-align:left !important; font-size:16px !important; margin:0 16px !important; }
 #dalgeul-post .highlights .video-slot { margin-top: 8px !important; }
 @media (max-width: 600px) {
   #dalgeul-post .video-slot,
@@ -289,8 +289,8 @@
 #dalgeul-post [data-dalgeul-icon="c7b07"] { width:13.5px; height:13.5px; }
 #dalgeul-post [data-dalgeul-icon="de3d0"] { width:13.5px; height:13.5px; }
 #dalgeul-post .faq-panels { margin-inline:16px !important; }
-#dalgeul-post #faq-title { text-align:left !important; font-size:14px !important; margin:0 16px !important; }
-#dalgeul-post .faq-tabs label { flex:none; display:flex; align-items:center; gap:5px; padding:4px 8px; border-radius:20px; background:#838383; color:#171717; font-size:12px; font-weight:300; line-height:16px; white-space:nowrap; cursor:pointer; }
+#dalgeul-post #faq-title { text-align:left !important; font-size:16px !important; margin:0 16px !important; }
+#dalgeul-post .faq-tabs label { flex:none; display:flex; align-items:center; gap:5px; padding:4px 8px; border-radius:20px; background:#838383; color:#171717; font-size:13px; font-weight:300; line-height:16px; white-space:nowrap; cursor:pointer; }
 #dalgeul-post .faq-tabs label .icon-on { display:none; }
 #dalgeul-post .faq-tabs [data-dalgeul-icon] { border:1px solid currentColor; border-radius:50%; font-size:9px; line-height:11px; text-align:center; }
 #dalgeul-post .faq-tabs label:nth-of-type(1) span::before { content:"✓"; }
@@ -339,7 +339,7 @@
 #dalgeul-post .faq-height-reference { grid-area: 1 / 1; align-self: start; min-width: 0; visibility: hidden; }
 #dalgeul-post .faq-row { padding-block: 12px; border-bottom: 1px solid #2a2a2a; }
 #dalgeul-post .faq-row h3,
-#dalgeul-post .faq-row summary { font-size: 12px; font-weight: 500; line-height: 16px; }
+#dalgeul-post .faq-row summary { font-size: 14px; font-weight: 500; line-height: 16px; }
 #dalgeul-post .faq-row summary {
   display: flex;
   justify-content: space-between;
@@ -350,7 +350,7 @@
 }
 #dalgeul-post .faq-row summary::-webkit-details-marker { display: none; }
 #dalgeul-post .faq-row:not([open]) summary img { transform: rotate(180deg); }
-#dalgeul-post .faq-row p { margin-top: 8px; color: #b7b7b7; font-size: 11px; line-height: 13px; font-weight: 300; }
+#dalgeul-post .faq-row p { margin-top: 8px; color: #b7b7b7; font-size: 13px; line-height: 13px; font-weight: 300; }
 #dalgeul-post .faq-row em { color: var(--accent); font-style: normal; }
 #dalgeul-post [data-dalgeul-icon="234e0"] { width:8px; height:8px; }
 #dalgeul-post .faq-row:not([open]) summary [data-dalgeul-icon] { transform:rotate(180deg); }
