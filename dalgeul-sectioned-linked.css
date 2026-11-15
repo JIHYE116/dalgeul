@@ -37,7 +37,7 @@
 #dalgeul-post .scroll-row::-webkit-scrollbar { display: none; }
 #dalgeul-post .scroll-row { display: flex; padding-inline: var(--gutter); }
 #dalgeul-post .is-dragging { cursor: grabbing; user-select: none; scroll-snap-type: none !important; }
-#dalgeul-post .menu { margin-bottom: 16px; }
+#dalgeul-post .menu { margin-bottom: 32px; }
 #dalgeul-post .menu :is(button, a[data-menu]) {
   flex: none;
   border: 0;
@@ -224,7 +224,7 @@
 
 #dalgeul-post .keywords {
   gap: 10px;
-  margin-top: 16px;
+  margin-top: 32px;
   list-style: none;
 }
 #dalgeul-post .keywords li {
@@ -249,12 +249,12 @@
 }
 #dalgeul-post .keywords > li {
   height: 34px !important;
-  border: 1px solid #f0f0f0 !important;
+  border: 1px solid #7c7c7c !important;
   font-size: 14px !important;
 }
 #dalgeul-post .keywords > li:first-of-type { border-color: #d40304 !important; }
 
-#dalgeul-post .highlights { margin-top: 16px; }
+#dalgeul-post .highlights { margin-top: 32px; }
 #dalgeul-post .video-slot {
   height: 200px;
   margin: 8px var(--gutter) 0;
@@ -278,7 +278,7 @@
 }
 
 #dalgeul-post .faq { margin-top: 32px; }
-#dalgeul-post .faq-tabs { gap: 8px; margin-top: 16px; }
+#dalgeul-post .faq-tabs { gap: 8px; margin-top: 20px; }
 #dalgeul-post .faq-tabs button {
   flex: none;
   display: flex;
@@ -357,7 +357,7 @@
 }
 
 #dalgeul-post .faq-height-reference { grid-area: 1 / 1; align-self: start; min-width: 0; visibility: hidden; }
-#dalgeul-post .faq-row { padding-block: 16px; border-bottom: 1px solid #2a2a2a; }
+#dalgeul-post .faq-row { padding-block: 20px; border-bottom: 1px solid #2a2a2a; }
 #dalgeul-post .faq-row h3,
 #dalgeul-post .faq-row summary { font-size: 14px; font-weight: 500; line-height: 16px; }
 #dalgeul-post .faq-row summary {
@@ -370,7 +370,7 @@
 }
 #dalgeul-post .faq-row summary::-webkit-details-marker { display: none; }
 #dalgeul-post .faq-row:not([open]) summary img { transform: rotate(180deg); }
-#dalgeul-post .faq-row p { margin-top: 8px; color: #b7b7b7; font-size: 13px; line-height: 13px; font-weight: 300; }
+#dalgeul-post .faq-row p { margin-top: 10px; color: #b7b7b7; font-size: 13px; line-height: 13px; font-weight: 300; }
 #dalgeul-post .faq-row em { color: var(--accent); font-style: normal; }
 #dalgeul-post [data-dalgeul-icon="234e0"] { width:8px; height:8px; }
 #dalgeul-post .faq-row:not([open]) summary [data-dalgeul-icon] { transform:rotate(180deg); }
