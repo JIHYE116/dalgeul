@@ -381,3 +381,20 @@
 #user_contents #dalgeul-post * {
   font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif !important;
 }
+
+
+.view_subject {
+	display: none !important;
+}
+
+.bizboard_wrapper {
+	display: none !important;
+}
+
+#article > p {
+	display: none !important;
+}
+
+#article {
+	padding: 0;
+}
