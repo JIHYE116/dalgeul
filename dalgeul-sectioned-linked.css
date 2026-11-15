@@ -38,7 +38,7 @@
 #dalgeul-post .scroll-row { display: flex; padding-inline: var(--gutter); }
 #dalgeul-post .is-dragging { cursor: grabbing; user-select: none; scroll-snap-type: none !important; }
 #dalgeul-post .menu { margin-bottom: 16px; }
-#dalgeul-post .menu button {
+#dalgeul-post .menu :is(button, a[data-menu]) {
   flex: none;
   border: 0;
   background: transparent;
@@ -48,28 +48,38 @@
   font-size: 16px;
   line-height: 20px;
 }
-#dalgeul-post .menu button:first-child { padding-left: 0; }
-#dalgeul-post .menu button:last-child { padding-right: 0; }
-#dalgeul-post .menu button span { display: block; height: 20px; }
-#dalgeul-post .menu button[aria-pressed="true"] span {
+#dalgeul-post .menu :is(button, a[data-menu]):first-child { padding-left: 0; }
+#dalgeul-post .menu :is(button, a[data-menu]):last-child { padding-right: 0; }
+#dalgeul-post .menu :is(button, a[data-menu]) span { display: block; height: 20px; }
+#dalgeul-post .menu :is(button, a[data-menu])[aria-pressed="true"] span {
   border-bottom: 1px solid var(--accent);
   color: #fff;
   font-weight: 600;
 }
+#dalgeul-post .menu a[data-menu] {
+  display: block;
+  text-decoration: none !important;
+}
+
+#dalgeul-post .menu a[data-menu]:is(:active, :focus-visible) > span {
+  color: #fff !important;
+  box-shadow: inset 0 -1px #d40304;
+}
+
 #dalgeul-post h2 { margin-inline: var(--gutter); font-size: 14px; font-weight: 600; line-height: 20px; }
 #dalgeul-post [data-dalgeul-icon] { display:inline-block; flex:none; background: center / contain no-repeat; vertical-align: middle; }
 #dalgeul-post [hidden] { display:none !important; }
 #dalgeul-post.page { padding:24px 0 !important; text-align:left !important; }
 #dalgeul-post .scroll-row { padding-inline:16px !important; }
-#dalgeul-post .menu button[data-menu="home"] > span {
+#dalgeul-post .menu :is(button, a[data-menu])[data-menu="home"] > span {
   border-bottom: 1px solid #d40304 !important;
   box-shadow: inset 0 -1px #d40304 !important;
 }
 @media (max-width: 600px) {
   #dalgeul-post.page { --gutter: 20px; padding-block: 28px !important; }
   #dalgeul-post .scroll-row { padding-inline: 20px !important; }
-  #dalgeul-post .menu button { font-size: 16px !important; line-height: 24px !important; }
-  #dalgeul-post .menu button > span { height: 24px !important; }
+  #dalgeul-post .menu :is(button, a[data-menu]) { font-size: 16px !important; line-height: 24px !important; }
+  #dalgeul-post .menu :is(button, a[data-menu]) > span { height: 24px !important; }
 }
 #dalgeul-post .figure-html[data-dalgeul-section],
 #dalgeul-post .figure-html[data-dalgeul-section] > [data-ke-class="article"] { display: contents; }
