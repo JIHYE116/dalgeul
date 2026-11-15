@@ -121,6 +121,7 @@
   display: grid;
   justify-items: start;
   gap: 3px;
+	background-color: transparent;
 }
 #dalgeul-post .slide-copy .slide-title,
 #dalgeul-post .slide-copy p {
@@ -154,6 +155,7 @@
   position: absolute;
   bottom: 16px;
   right: 20px;
+	background-color: transparent;
 }
 #dalgeul-post .banner-controls button {
   display: grid;
