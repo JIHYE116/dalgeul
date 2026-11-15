@@ -633,6 +633,11 @@ body, div, li {
   transition: opacity 200ms ease, visibility 200ms;
 }
 
+#dalgeul-notice .notice-toggle:checked + .notice-overlay,
+#dalgeul-notice .notice-toggle:checked + .notice-overlay .notice-sheet {
+  touch-action: none;
+}
+
 #dalgeul-notice .notice-toggle:not(:checked) + .notice-overlay {
   opacity: 0;
   visibility: hidden;
@@ -798,7 +803,7 @@ body:has(#dalgeul-notice-open:checked) {
 #dalgeul-notice .notice-footer .notice-close { min-width: 40px; }
 
 @media (max-width: 600px) and (pointer: coarse) {
-  #dalgeul-notice .notice-overlay { padding-bottom: 32px; }
+  #dalgeul-notice .notice-overlay { padding-bottom: 96px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
