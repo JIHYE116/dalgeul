@@ -413,3 +413,7 @@
 .bottom_banner {
 	display: none !important;
 }
+
+.cafe_navi > h2 {
+	background: black !important;
+}
