@@ -382,7 +382,6 @@
   font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif !important;
 }
 
-
 .view_subject {
 	display: none !important;
 }
@@ -391,7 +390,7 @@
 	display: none !important;
 }
 
-#article > p {
+#article > p:first-child, #article > p:last-child {
 	display: none !important;
 }
 
