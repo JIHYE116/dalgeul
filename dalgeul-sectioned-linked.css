@@ -459,10 +459,6 @@
         display: none !important;
     }
 
-    body, div, li {
-        background-color: transparent !important;
-    }
-
     #header {
         visibility: hidden !important;
     }
