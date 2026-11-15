@@ -27,6 +27,8 @@
 }
 #dalgeul-post.page {
   width: 100%;
+  /* 가로 스크롤 영역의 콘텐츠가 카페 본문 테이블을 밀어내지 않게 한다. */
+  container-type: inline-size;
   padding-block: 24px;
 }
 #dalgeul-post .scroll-row {
