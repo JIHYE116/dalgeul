@@ -526,3 +526,19 @@ body, div, li {
     display: none !important;
   }
 }
+
+/* 배너 이미지가 카페 기본 여백의 영향을 받지 않도록 카드에 밀착 */
+#dalgeul-post .banner .slide .slide-image {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  object-fit: cover !important;
+}
