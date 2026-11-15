@@ -376,3 +376,8 @@
 .figure-html {
 	margin-top: 0 !important;
 }
+
+#user_contents #dalgeul-post,
+#user_contents #dalgeul-post * {
+  font-family: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif !important;
+}
