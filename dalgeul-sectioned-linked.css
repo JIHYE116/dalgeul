@@ -270,14 +270,68 @@
   overflow: hidden;
   background: #ccc;
 }
-#dalgeul-post .video-slot video,
-#dalgeul-post .video-slot iframe {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
+
+#dalgeul-post .youtube-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 176px;
+  padding: 16px;
+  background:
+    radial-gradient(ellipse at 10% 19%, rgb(84 57 64 / 25%), transparent 46%),
+    radial-gradient(ellipse at 83% 96%, rgb(81 39 43 / 35%), transparent 56%),
+    radial-gradient(ellipse at 88% 12%, rgb(56 31 36 / 24%), transparent 44%),
+    linear-gradient(125deg, #171113, #180d10);
+  text-align: center;
+}
+
+#dalgeul-post .youtube-banner .youtube-banner-title {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+}
+
+#dalgeul-post .youtube-banner .youtube-banner-description {
+  margin: 0;
+  color: #d6cbcd;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+
+#dalgeul-post .youtube-banner a.youtube-banner-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 40px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: #d40304;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none !important;
+}
+
+#dalgeul-post .youtube-banner-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+#dalgeul-post .youtube-banner-play {
+  flex: none;
+  width: 15px;
+  height: 15px;
+  background: currentColor;
+  clip-path: polygon(25% 12%, 86% 50%, 25% 88%);
 }
 #dalgeul-post .video-slot { margin-inline:16px !important; }
 #dalgeul-post #highlights-title { text-align:left !important; font-size:16px !important; margin:0 16px !important; }
@@ -285,6 +339,7 @@
 @media (max-width: 600px) {
   #dalgeul-post .video-slot,
   #dalgeul-post #highlights-title { margin-inline: 20px !important; }
+  #dalgeul-post .youtube-banner { max-width: calc(100vw - 40px); }
   #dalgeul-post .highlights { margin-top: 40px !important; }
   #dalgeul-post #highlights-title {
       font-size: 18px !important;
