@@ -272,6 +272,7 @@
 }
 
 #dalgeul-post .youtube-banner {
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,18 +280,38 @@
   gap: 6px;
   min-height: 176px;
   padding: 16px;
-  background:
-    radial-gradient(ellipse at 10% 19%, rgb(84 57 64 / 25%), transparent 46%),
-    radial-gradient(ellipse at 83% 96%, rgb(81 39 43 / 35%), transparent 56%),
-    radial-gradient(ellipse at 88% 12%, rgb(56 31 36 / 24%), transparent 44%),
-    linear-gradient(125deg, #171113, #180d10);
+  background: #111010;
   text-align: center;
+}
+
+#dalgeul-post .youtube-banner::before {
+  position: absolute;
+  z-index: -1;
+  inset: -24px;
+  background:
+    radial-gradient(ellipse at 30% 23%, #78624e 0%, transparent 41%),
+    radial-gradient(ellipse at 68% 11%, #493328 0%, transparent 52%),
+    radial-gradient(ellipse at 0% 48%, #564035 0%, transparent 48%),
+    radial-gradient(ellipse at 88% 44%, #382821 0%, transparent 46%),
+    #171412;
+  filter: blur(24px);
+  content: "";
+  pointer-events: none;
+}
+
+#dalgeul-post .youtube-banner::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(13 11 10 / 16%), rgb(13 12 12 / 42%) 48%, #0c0c0d 100%);
+  content: "";
+  pointer-events: none;
 }
 
 #dalgeul-post .youtube-banner .youtube-banner-title {
   margin: 0;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 34px;
   text-align: center;
