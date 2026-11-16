@@ -80,8 +80,7 @@
 @media (max-width: 600px) {
   #dalgeul-post.page { --gutter: 20px; padding-block: 28px !important; }
   #dalgeul-post .scroll-row { 
-	  padding-inline: 20px !important; 
-        border-bottom: solid #292828 0.5px;
+	  padding-inline: 20px !important;
   }
   #dalgeul-post .menu :is(button, a[data-menu]) { font-size: 16px !important; line-height: 24px !important; }
   #dalgeul-post .menu :is(button, a[data-menu]) > span { height: 24px !important; }
