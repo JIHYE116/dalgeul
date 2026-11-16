@@ -426,7 +426,7 @@
   #dalgeul-post .faq-row p { font-size: 13px !important; line-height: 19px !important; }
 }
 /* 기타사항을 모두 펼친 높이. 답변을 접어도 탭 영역은 줄어들지 않음. */
-#dalgeul-post .faq-panels { min-height: 413px; }
+#dalgeul-post .faq-panels { min-height: 413px; margin-top: 20px;}
 @media (max-width: 600px) {
   #dalgeul-post .faq-panels { min-height: 434px; }
 }
