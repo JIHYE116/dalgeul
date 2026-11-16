@@ -81,7 +81,6 @@
   #dalgeul-post.page { --gutter: 20px; padding-block: 28px !important; }
   #dalgeul-post .scroll-row { 
 	  padding-inline: 20px !important; 
-	  padding-bottom: 20px;
         border-bottom: solid #292828 0.5px;
   }
   #dalgeul-post .menu :is(button, a[data-menu]) { font-size: 16px !important; line-height: 24px !important; }
@@ -295,7 +294,7 @@
 }
 
 #dalgeul-post .faq { margin-top: 48px; }
-#dalgeul-post .faq-tabs { gap: 8px; margin-top: 20px; border-bottom: none; }
+#dalgeul-post .faq-tabs { gap: 8px; margin-top: 20px; border-bottom: none; padding-bottom: 20px; }
 #dalgeul-post .faq-tabs button {
   flex: none;
   display: flex;
@@ -400,7 +399,7 @@
 #dalgeul-post .faq-height-reference { display: none; }
 #dalgeul-post .faq-row { padding-block: 20px;
 					   background-color: #19191B;
-    padding: 0 16px;
+    padding: 16px;
     border-radius: 12px;
     margin-bottom: 20px;
 					   }
